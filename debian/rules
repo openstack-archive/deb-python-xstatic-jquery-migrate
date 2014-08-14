@@ -13,10 +13,14 @@ override_dh_install:
 	set -e && for pyvers in $(PYTHONS); do \
 		python$$pyvers setup.py install --install-layout=deb \
 			--root $(CURDIR)/debian/python-xstatic-jquery-migrate; \
+		yui-compressor -o $(CURDIR)/debian/python-xstatic-jquery-migrate/usr/lib/python$$pyvers/dist-packages/xstatic/pkg/jquery_migrate/data/jquery-migrate.min.js \
+			$(CURDIR)/debian/python-xstatic-jquery-migrate/usr/lib/python$$pyvers/dist-packages/xstatic/pkg/jquery_migrate/data/jquery-migrate.js ; \
 	done
 	set -e && for pyvers in $(PYTHON3S); do \
 		python$$pyvers setup.py install --install-layout=deb \
 			--root $(CURDIR)/debian/python3-xstatic-jquery-migrate; \
+		yui-compressor -o $(CURDIR)/debian/python3-xstatic-jquery-migrate/usr/lib/python3/dist-packages/xstatic/pkg/jquery_migrate/data/jquery-migrate.min.js \
+			$(CURDIR)/debian/python3-xstatic-jquery-migrate/usr/lib/python3/dist-packages/xstatic/pkg/jquery_migrate/data/jquery-migrate.js ; \
 	done
 	rm -rf $(CURDIR)/debian/python*-xstatic-jquery-migrate/usr/lib/python*/dist-packages/*.pth
 
