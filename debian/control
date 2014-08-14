@@ -42,7 +42,7 @@ Description: JQuery Migrate XStatic support - Python 2.x
  .
  This package provides JQuery Migrate support as a Python 2.x module.
 
-Package: python3-XStatic-JQuery-Migrate
+Package: python3-xstatic-jquery-migrate
 Architecture: all
 Pre-Depends: dpkg (>= 1.15.6~)
 Depends: python3-xstatic, ${misc:Depends}, ${python3:Depends}
