@@ -1,4 +1,4 @@
-python-xstatic-jquery-migrate (1.2.1.1-1) unstable; urgency=medium
+python-xstatic-jquery-migrate (1.2.1.1+dfsg1-1) unstable; urgency=medium
 
   * Initial release. (Closes: #758098)
 
