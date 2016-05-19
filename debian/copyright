@@ -1,6 +1,6 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: XStatic-JQuery-Migrate
-Source: git://github.com/stackforge/xstatic-jquery-migrate.git
+Source: https://github.com/openstack/xstatic-jquery-migrate.git
 
 Files: debian/*
 Copyright: (c) 2014, Thomas Goirand <zigo@debian.org>
